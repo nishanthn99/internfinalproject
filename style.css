@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.gameintro{
+    position: relative;
+    top: 100px;
+    font-family:'Courier New', Courier, monospace;
+    left: 35vw;
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+}
+.nish{
+    position: relative;
+    left: 10vw;
+}
+.btn{
+    padding: 6px 8px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    position: relative;
+    left: 50vw;
+}
+.gamecont{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.boyrunning{
+    width: 8%;
+    height: 20%;
+    background-image: url(running.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.obstacle{
+    width: 4%;
+    height: 14%;
+    background-image: url(cactusimg.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:absolute;
+    bottom: 10px;
+    left: 100vw;
+}
+.jumping{
+    animation: jump 8s 1;
+
+}
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 500px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.animobstacle{
+    animation: animobstacle linear 4s infinite;
+}
+@keyframes animobstacle{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -5vw;
+    }
+}
+.gameover{
+    font-size: 90px;
+    color: red;
+    font-family:monospace;
+    visibility: hidden;
+    margin-left: 40vw;
+}
+.score{
+    color:white;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 10px;
+}
